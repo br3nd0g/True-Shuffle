@@ -3,12 +3,11 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import sys
 import accessSpotify as acSp
-import os
 import urllib.parse
 import json
 
-clientID = os.environ['clientID']
-clientSecret = os.environ['clientSecret']
+clientID = ""
+clientSecret = ""
 spotifyURL = "https://accounts.spotify.com/authorize"
 baseURL = 'https://true-spotify-shuffle.brendawg.repl.co'
 
