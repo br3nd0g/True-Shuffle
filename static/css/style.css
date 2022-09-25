@@ -1,0 +1,164 @@
+:root{
+  --background-clr: #191414;
+  --text-clr: #ffffff;
+  --highlight1: #1ed760;
+  --highlight2: #1db954;
+}
+
+@import url("https://use.typekit.net/vdq5amm.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-clr);
+  text-align: center;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--background-clr);
+}
+
+header{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+a{
+  color: var(--highlight2);
+  font-size: 28px;
+  padding: 15px 27px;
+  border: 2px solid var(--highlight2);
+  border-radius: 4px;
+  background: var(--background-clr);
+  text-decoration: none;
+  margin-top: 50px;
+  transition: 0.3s;
+}
+
+a:hover{
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 0 12px var(--highlight1);
+  transform: rotate(2deg);
+}
+
+p{
+  font-size: 22px;
+  text-align: center;
+}
+
+#spotifyLogo{
+  height: 55%;
+  margin-right: 15px;
+}
+
+#title{
+  font-size: 52px;
+  color: #1ed760;
+  margin-left: 15px;
+}
+
+#mainText{
+  width: 70%
+}
+
+#links{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#playlists{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.playlist{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 28px;
+  width: 300px;
+  height: 400px;
+  transition: 0.2s;
+}
+
+.playlistImg{
+  width: 300px;
+  height: 300px;
+  transition: 0.2s;
+}
+
+.playlistName{
+  text-align: center;
+  font-size: 27px;
+}
+
+.playlist:hover > .playlistImg{
+  box-shadow: 0 0 12px var(--highlight1);
+  border-radius: 8px;
+}
+
+.playlist:hover{
+  transform: scale(1.025);
+  cursor: pointer;
+}
+
+#pleaseSelect{
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 645px) {
+  #spotifyLogo{
+    height: 40%;
+    margin: 0 10px;
+  }
+
+  #title{
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  #mainText{
+    width: 90%;
+  }
+  #links{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .playlist{
+    width: 250px;
+    height: 325px;
+  }
+  .playlistImg{
+    width: 250px;
+    height: 250px;
+  }
+  .playlistName{
+    font-size: 22px;
+  }
+}

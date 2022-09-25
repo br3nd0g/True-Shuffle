@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>True Spotify Shuffle</title>
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="/static/images/spotifyLogo.png">
+</head>
+
+<body>
+  <header>
+    <img id="spotifyLogo" src="/static/images/spotifyLogo.png">
+    <h1 id="title">True Spotify Shuffle</h1>
+  </header>
+  <main>
+    <h1 style="margin-bottom: 13px;">Your playlist {{ playlistName }} was truly shuffled!</h1>
+    <p>Find it in your library at "{{ newPlaylistName }}"</p>
+    <div id="links">
+      <a href="{{url}}/select">Home</a>
+      <a href="https://open.spotify.com/playlist/{{ playlistID }}" target=”_blank” rel="noopener noreferrer">Show Playlist</a>
+    </div>
+  </main>
+</body>
+
+</html>

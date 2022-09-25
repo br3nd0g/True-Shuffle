@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>True Spotify Shuffle</title>
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/static/css/loadingDiv.css" rel="stylesheet" type="text/css" />
+  <script src="/static/js/script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="/static/images/spotifyLogo.png">
+  <script>
+    var playlists = `{{playlists | safe}}`
+    playlists = JSON.parse(playlists)
+    playlistItems = playlists.items
+  </script>
+  <script>
+    var username = "{{ username }}"
+    var refreshToken = "{{ refreshToken }}"
+  </script>
+</head>
+
+<body>
+  <header>
+    <img id="spotifyLogo" src="/static/images/spotifyLogo.png">
+    <h1 id="title">True Spotify Shuffle</h1>
+  </header>
+  <main>
+    <h1 id="pleaseSelect">Please select the playlist which you wish to shuffle</h1>
+    <div id="playlists">
+      
+    </div>
+
+    <div id="load" style="display:none;">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+  </main>
+</body>
+
+</html>
