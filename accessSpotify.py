@@ -1,11 +1,10 @@
-import os
 import requests
 import math
 import random
 
 
-clientID = os.environ['clientID']
-clientSecret = os.environ['clientSecret']
+clientID = ""
+clientSecret = ""
 spotifyURL = "https://accounts.spotify.com/authorize"
 baseURL = 'https://true-spotify-shuffle.brendawg.repl.co'
 tokenURL = "https://accounts.spotify.com/api/token"
