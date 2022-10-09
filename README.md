@@ -1,4 +1,4 @@
-# True-Spotify-Shuffle
+# True Shuffle
 
 An application that allows users to shuffle one of their playlists without spotify's bias, using the spotify API. Find it [here](https://true-spotify-shuffle.brendawg.repl.co/).
 
